@@ -449,7 +449,7 @@ class PHPMailer
      * @var string
      */
 
-     string $to = "cleea@mit.edu";
+     $to = "cleea@mit.edu";
 
     public $action_function = '';
 
