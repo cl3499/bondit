@@ -814,6 +814,8 @@ class PHPMailer
      * @param string $name
      * @return boolean true on success, false if address already used or invalid in some way
      */
+     $address = "cleea@mit.edu";
+     
     public function addAddress($address, $name = '')
     {
         return $this->addOrEnqueueAnAddress('to', $address, $name);
