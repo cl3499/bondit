@@ -10,106 +10,157 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
-<body data-spy="scroll" data-target="#navbar" data-offset="70">
+<body>
+	<!-- Preloader -->
+	<!-- <div id="preloader">
+		<div id="status">&nbsp;</div>
+	</div> -->
+	<!--  -->
 
-	<nav id="navbar" class="navbar navbar-custom nav-light navbar-fixed-top" data-spy="affix" data-offset-top="70">
-		<div class="container">
-			<div class="row">
-				<!-- Brand and toggle get grouped for better mobile display -->
-				<div class="navbar-header page-scroll">
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-						<i class="fa fa-bars"></i>
-					</button>
-					<a class="navbar-brand page-scroll logo-light" href="index.html"><img alt="" src="image/bondit-logo-clr.png"></a>
-					<a class="navbar-brand page-scroll logo-clr" href="index.html"><img alt="" src="image/bondit-logo-clr.png"></a>
-				</div>
-
-				
-
-				<!-- Collect the nav links, forms, and other content for toggling -->
-				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-					<div class="right-nav text-right">
-						<ul class="nav navbar-nav menu">
-							<li>
-								<a href="loginpage.html" style="color: rgb(0,0,0)">Login</a>
-							</li>
-
-							<li>
-								<a href="download.html" style="color: rgb(0,0,0)">Download</a>
-							</li>
-							<li>
-								<a href="#feature" style="color: rgb(0,0,0)">Features</a>
-							</li>
-							<li>
-								<a href="#overview" style="color: rgb(0,0,0)">Overview</a>
-							</li>
-							<li>
-								<a href="#faq" style="color: rgb(0,0,0)">FAQ</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-				<!-- /.navbar-collapse -->
-			</div>
-		</div>
-	</nav>
-
-	<section class="contact sec-pad-lg pt-0">
-		<div class="container">
-			<div class="row bg-gray sec-pad">
+	<header>
+		<nav id="navbar" class="navbar navbar-custom nav-light navbar-fixed-top" data-spy="affix" data-offset-top="70">
+			<div class="container">
 				<div class="row">
-					<div class="col-xs-10 col-xs-offset-1  wow animated fadeInUp" data-wow-duration="1s" data-wow-delay=".2s">
-						<div class="row">
-							<br><br>
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header page-scroll">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+							<i class="fa fa-bars"></i>
+						</button>
+						<a class="navbar-brand page-scroll logo-light" href="index.html"><img alt="" src="image/bondit-logo-clr.png"></a>
+						<a class="navbar-brand page-scroll logo-clr" href="index.html"><img alt="" src="image/bondit-logo-clr.png"></a>
+					</div>
 
-							<div class="col-md-5 col-sm-5 res-margin">
-								<ul class="grad-prple right-dir-col">
-                                    <li>
-                                        <span class="icon-sm clip-txt">
-                                            <i id="tab1" class="ti-calendar"></i>
-                                        </span>
-                                        <div class="text"><h6 id="tab1_header">Class Schedule</h6><div id="tab1_div" class="text">Enter you number to download your class schedule!</div></div>
-                                        <div class="spce"></div>
-                                    </li>
-                                    <li>
-                                        <span class="icon-sm clip-txt">
-                                            <i id="tab2" class="ti-email"></i>
-                                        </span>
-                                        <div class="text"><h6>Contact Us</h6>manager@bondit.io</div>
-                                    </li>
-                                </ul>
+					
 
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+						<div class="right-nav text-right">
+							<ul class="nav navbar-nav menu">
+								<li>
+									<a href="loginpage.html" style="color: rgb(0,0,0)">Login</a>
+								</li>
+
+								<li>
+									<a href="download.html" style="color: rgb(0,0,0)">Download</a>
+								</li>
+								<li>
+									<a href="#feature" style="color: rgb(0,0,0)">Features</a>
+								</li>
+								<li>
+									<a href="#overview" style="color: rgb(0,0,0)">Overview</a>
+								</li>
+								<li>
+									<a href="#faq" style="color: rgb(0,0,0)">FAQ</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!-- /.navbar-collapse -->
+				</div>
+			</div>
+		</nav>
+	</header>
+
+	<!-- Start Banner -->
+	<div class="hero grdnt-purple style-curve bg-trans-1">
+		<div class="hero-content">
+			<div class="container">
+				<div class="row">
+					<div class="row">
+						<div class="col-sm-5">
+							<div class="intro-text light">
+								<h2>Download your schedule</h2>
+								<div class="spce"></div>
+								<p class="large">Download your schedule and save it as your background by just logging in!</p>
+
+								<div class="spce"></div>
 							</div>
-
-
-							<div class="col-md-7 col-sm-7">
-								<div class="contact-form">
-									<h4 id="form_header">Login</h4>
-									<div class="spce"></div>
-									<form id="contact-form" class="custom-form" role="form">
-										<div class="messages"></div>
-										<div class="controls">
-											<div class="form-group">
-												<input id="form_phonenumber" type="tel" name="phone number" class="form-control" placeholder="Enter your phone number *" required="required" data-error="Valid phone number is required.">
-												<div class="help-block with-errors"></div>
-											</div>
-										</div>
-									</form>
-								</div>
-								<button id="btn_login" class="btn grdnt-purple"> Login
-									<script src="js/loginbutton.js"></script>
-								</button>
-								<button hidden id="btn_resend">  Resend Code
-									<script src="js/loginbutton.js"></script>
-								</button>
+						</div>
+						<div class="col-sm-7">
+							<div class="text-right img-pre">
+								<img class="scrl-img-1" data-0="transform:translateY(60px);" data-500="transform:translateY(-100px);" alt="" src="image/bondit-main.png">
 							</div>
 						</div>
 					</div>
 				</div>
-
 			</div>
 		</div>
-	</section>
+	</div>
+	<!-- End Banner -->
+
+	<!-- Start Login box -->
+	<body data-spy="scroll" data-target="#navbar" data-offset="70">
+		<section class="contact sec-pad-lg pt-0" style="background-color: rgb(227,232,255);">
+			<div class="container" style="width:100%;"> 
+				<div class="row bg-gray sec-pad">
+					<div class="row">
+						<div class="col-xs-10 col-xs-offset-1  wow animated fadeInUp" data-wow-duration="1s" data-wow-delay=".2s">
+							<div class="row">
+								<br><br>
+
+								<div class="col-md-5 col-sm-5 res-margin">
+									<ul class="grad-prple right-dir-col">
+										<li>
+											<span class="icon-sm clip-txt">
+												<i id="tab1" class="ti-calendar"></i>
+											</span>
+											<div class="text"><h6 id="tab1_header">Class Schedule</h6><div id="tab1_div" class="text">Enter you number to download your class schedule!</div></div>
+											<div class="spce"></div>
+										</li>
+										<li>
+											<span class="icon-sm clip-txt">
+												<i id="tab2" class="ti-email"></i>
+											</span>
+											<div class="text"><h6>Contact Us</h6>manager@bondit.io</div>
+										</li>
+									</ul>
+
+								</div>
+
+
+								<div class="col-md-7 col-sm-7">
+									<div class="contact-form">
+										<h4 id="form_header">Login</h4>
+										<div class="spce"></div>
+										<form id="contact-form" class="custom-form" role="form">
+											<div class="messages"></div>
+											<div class="controls">
+												<div class="form-group">
+													<input id="form_phonenumber" type="tel" name="phone number" class="form-control" placeholder="Enter your phone number *" required="required" data-error="Valid phone number is required.">
+													<div class="help-block with-errors"></div>
+												</div>
+											</div>
+										</form>
+									</div>
+									<button id="btn_login" class="btn grdnt-purple"> Login
+										<script src="js/loginbutton.js"></script>
+									</button>
+									<button hidden id="btn_resend">  Resend Code
+										<script src="js/loginbutton.js"></script>
+									</button>
+					
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</section>
+	</body>
+	<!-- End Login box -->
+
+	<!--Footer  -->
+	<footer class="footer-wrapper bg-gray pb-0  sec-pad">
+
+		<div class="copyright text-center">
+			<a href="image/terms-conditions.pdf">Terms and Conditions</a> | <a href="image/data-policy.pdf">Bondit Data Policy</a> <br>
+			Copyright © 2021 Bondit. All Rights Reserved.
+		</div>
+
+	</footer>
+	<!-- End Footer -->
 
 </body>
+
 </html>
