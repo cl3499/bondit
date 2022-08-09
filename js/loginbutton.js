@@ -8,7 +8,7 @@ btn0.addEventListener('click', function(){
     user_num = user_num.replace('(', '').replace(')', '').replace('-', '').replace(' ', '').replace('/', '')
 
     //Sends the verification code via text message
-    postData('https://dev.bondit.io/verification', {countryNumber: '+1', mobile:'8032806174'}, 'POST').then(res => {
+    postData('https://dev.bondit.io/verification', {countryNumber: '+1', mobile:user_num}, 'POST').then(res => {
       if (res.sucess === false){
         alert('Unable to send verification code. Please check your internet connection.')
         location.href = 'bondit-main/loginpage2.html'
